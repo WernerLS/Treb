@@ -19,16 +19,9 @@ echo certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerL
 echo certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/MiCertII.altp" MiCertII.altp >> MiCertII.altp
 echo certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/MiCertIII.uiaq" MiCertIII.uiaq >> MiCertII.altp
 
-echo certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/2dir.uiaq" 2dir.uiaq >> MiCertII.altp
-echo certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/3cpy.uiaq" 3cpy.uiaq >> MiCertII.altp
-echo certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/4sch.uiaq" 4sch.uiaq >> MiCertII.altp
-
-echo certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/5re.uiaq" 5re.uiaq >> MiCertII.altp
 echo certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/6pylooper.uiaq" 6pylooper.uiaq >> MiCertII.altp
 echo certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/6pylooper.altp" 6pylooper.altp >> MiCertII.altp
 
-echo certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/7looper.uiaq" 7looper.uiaq >> MiCertII.altp
-echo certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/7looper.altp" 7looper.altp >> MiCertII.altp
 echo certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/8opfile.uiaq" 8opfile.uiaq >> MiCertII.altp
 
 echo certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/up-query.altp" up-query.altp >> MiCertII.altp
